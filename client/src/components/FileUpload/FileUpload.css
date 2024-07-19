@@ -1,0 +1,116 @@
+.file-upload-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.file-upload-container h2 {
+    margin-bottom: 20px;
+}
+
+.file-upload-container input[type="file"] {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.file-upload-container .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Space between buttons */
+}
+
+.file-upload-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.file-upload-container .upload-button {
+    background: #007bff;
+}
+
+.file-upload-container .upload-button:hover {
+    background: #0056b3;
+}
+
+.file-upload-container .remove-file-button {
+    background: #dc3545;
+}
+
+.file-upload-container .remove-file-button:hover {
+    background: #c82333;
+}
+
+.file-upload-container .cancel-button {
+    background: #000;
+}
+
+.file-upload-container .cancel-button:hover {
+    background: #333;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.progress-bar-container {
+    flex-grow: 1;
+    height: 10px;
+    background: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #007bff;
+    transition: width 0.4s;
+}
+
+.progress-bar.complete {
+    background: #28a745;
+}
+
+.progress-percentage {
+    margin-left: 10px;
+    font-size: 14px;
+    min-width: 50px;
+    text-align: right;
+}
+
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.toast.show {
+    display: block;
+}
